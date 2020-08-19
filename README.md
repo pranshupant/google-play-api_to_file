@@ -4,5 +4,5 @@ Scraping Google Play Store using the [google-play-scraper](https://github.com/fa
 1.Clone the repo
 2.npm install\
 3.Open 2 terminals\
-3.npm start on Terminal 1\
+4.npm start on Terminal 1\
 5.npm run file on Terminal 2
