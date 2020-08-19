@@ -18,12 +18,17 @@ const collection = 'topselling_paid';
 const category = 'FOOD_AND_DRINK';
 const country = 'in';
 
+console.log('Writing Collection: '+ collection);
+console.log('Category: ' + category);
+console.log('Country: ' + country);
+console.log('To: ' + file_name);
+
 const url = 'http://localhost:3000/api/apps/?collection='+ collection + '&category=' + category + '&country=' + country;
 
 fetch(url)
   .then(response => response.json())
   .then(data => app_data = data)
-  .then(() => console.log(Object.keys(app_data.results).length))
+  .then(() => console.log('Number of entries = ' + Object.keys(app_data.results).length))
   .then(() => write(app_data.results, file_name))
 
 
