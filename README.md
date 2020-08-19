@@ -2,6 +2,8 @@
 Scraping Google Play Store using the [google-play-scraper](https://github.com/facundoolano/google-play-scraper) npm project and writing the results to file
 
 ## Steps
+Assumes local nodejs and npm installation
+
 1.Clone the repo
 
 2.```npm install```
@@ -12,7 +14,7 @@ Scraping Google Play Store using the [google-play-scraper](https://github.com/fa
 
 5.```npm run file on Terminal 2```
 
-Output will be in the form of a data.json file
+**NOTE:** Output will be in the form of a data.json file
 
 ## Changing Search Results
 Update the collections, categories and country variables as per requirement
