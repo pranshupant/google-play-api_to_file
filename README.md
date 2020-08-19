@@ -6,3 +6,9 @@ Scraping Google Play Store using the [google-play-scraper](https://github.com/fa
 3.Open 2 terminals\
 4.```npm start on Terminal 1```\
 5.```npm run file on Terminal 2```
+
+Output will be in the form of a json file
+
+## Changing Search Results
+Update the collections, categories and country variables as per requirement
+**NOTE:** Refer to constants.js for different possible values for the above stated variables
