@@ -1,0 +1,21 @@
+{
+  "name": "google-play-api_to_file",
+  "version": "1.0.0",
+  "description": "turn google play scraper into a RESTful API and write results to file",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "file": "node index.js"
+  },
+  "author": "Pranshu Pant",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pranshupant/google-play-api_to_file.git"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "google-play-scraper": "^7.0.1",
+    "node-fetch": "^2.6.0"
+  }
+}
