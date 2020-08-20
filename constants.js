@@ -1,5 +1,3 @@
-const { CLUSTER_BASE_URL } = require('./utils/configurations');
-
 module.exports.clusters = {
   new: 'new',
   top: 'top'
@@ -79,20 +77,6 @@ module.exports.collection = {
   NEW_PAID: 'topselling_new_paid',
   NEW_FREE_GAMES: 'topselling_new_free_games',
   NEW_PAID_GAMES: 'topselling_new_paid_games'
-};
-
-module.exports.collectionPaths = {
-  [this.collection.TOP_FREE]: `${CLUSTER_BASE_URL}/top`,
-  [this.collection.TOP_PAID]: `${CLUSTER_BASE_URL}/top`,
-  [this.collection.GROSSING]: `${CLUSTER_BASE_URL}/top`,
-  [this.collection.TRENDING]: `${CLUSTER_BASE_URL}/top`,
-  [this.collection.TOP_FREE_GAMES]: `${CLUSTER_BASE_URL}/top`,
-  [this.collection.TOP_PAID_GAMES]: `${CLUSTER_BASE_URL}/top`,
-  [this.collection.TOP_GROSSING_GAMES]: `${CLUSTER_BASE_URL}/top`,
-  [this.collection.NEW_FREE]: `${CLUSTER_BASE_URL}/new`,
-  [this.collection.NEW_PAID]: `${CLUSTER_BASE_URL}/new`,
-  [this.collection.NEW_FREE_GAMES]: `${CLUSTER_BASE_URL}/new`,
-  [this.collection.NEW_PAID_GAMES]: `${CLUSTER_BASE_URL}/new`
 };
 
 module.exports.sort = {

@@ -1,12 +1,13 @@
 const fetch = require("node-fetch");
-var fs = require('fs');
+const fs = require('fs');
+const constants = require("./constants.js");
 
 var app_data;
 const file_name = "data.json";
 
 function write(data, file_name) {
   var jsonData = JSON.stringify(data);
-  fs.writeFile(file_name, jsonData, function(err) {
+  fs.writeFile(file_name, jsonData, (err) => {
     if (err) {
         console.log(err);
     }
@@ -14,8 +15,8 @@ function write(data, file_name) {
 }
 
 //Refer to the different constants inside constants.js
-const collection = 'topselling_paid';
-const category = 'FOOD_AND_DRINK';
+const collection = constants.collection.TOP_PAID;
+const category = constants.category.FOOD_AND_DRINK;
 const country = 'in';
 
 console.log('Writing Collection: '+ collection);
@@ -30,5 +31,6 @@ fetch(url)
   .then(data => app_data = data)
   .then(() => console.log('Number of entries = ' + Object.keys(app_data.results).length))
   .then(() => write(app_data.results, file_name))
-
-
+  .catch(err => {
+    console.log(err);
+  });
